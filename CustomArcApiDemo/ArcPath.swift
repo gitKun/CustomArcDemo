@@ -15,7 +15,14 @@ extension UIBezierPath {
         let rotationAdjustment = CGFloat(Double.pi * 0.5)
         let modifiedStart = startAngle - rotationAdjustment
         let modifiedEnd = endAngle - rotationAdjustment
-        
+
+        addArc(withCenter: center, radius: radius, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: clockwise)
+    }
+
+    func addRotationArc(withCenter center: CGPoint, radius: CGFloat, startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool, rotationAngle: CGFloat = .pi / 2) {
+        let modifiedStart = startAngle - rotationAngle
+        let modifiedEnd = endAngle - rotationAngle
+
         addArc(withCenter: center, radius: radius, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: clockwise)
     }
 }

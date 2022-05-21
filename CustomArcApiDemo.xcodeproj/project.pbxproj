@@ -14,6 +14,8 @@
 		A17CDB6A246EE9CE0091ABF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17CDB68246EE9CE0091ABF9 /* LaunchScreen.storyboard */; };
 		A17CDB72246EEC580091ABF9 /* DarwArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CDB71246EEC580091ABF9 /* DarwArcView.swift */; };
 		A17CDB74246FFB780091ABF9 /* ArcPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17CDB73246FFB780091ABF9 /* ArcPath.swift */; };
+		BC916FD52837231B00C24327 /* BezierPathCalculateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC916FD42837231B00C24327 /* BezierPathCalculateTools.swift */; };
+		BC916FE72838B3DF00C24327 /* MaterialColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC916FE62838B3DF00C24327 /* MaterialColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A17CDB6B246EE9CE0091ABF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A17CDB71246EEC580091ABF9 /* DarwArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarwArcView.swift; sourceTree = "<group>"; };
 		A17CDB73246FFB780091ABF9 /* ArcPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcPath.swift; sourceTree = "<group>"; };
+		BC916FD42837231B00C24327 /* BezierPathCalculateTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BezierPathCalculateTools.swift; sourceTree = "<group>"; };
+		BC916FE62838B3DF00C24327 /* MaterialColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				A17CDB61246EE9CD0091ABF9 /* ViewController.swift */,
 				A17CDB71246EEC580091ABF9 /* DarwArcView.swift */,
 				A17CDB73246FFB780091ABF9 /* ArcPath.swift */,
+				BC916FD42837231B00C24327 /* BezierPathCalculateTools.swift */,
+				BC916FE62838B3DF00C24327 /* MaterialColor.swift */,
 				A17CDB63246EE9CD0091ABF9 /* Main.storyboard */,
 				A17CDB66246EE9CE0091ABF9 /* Assets.xcassets */,
 				A17CDB68246EE9CE0091ABF9 /* LaunchScreen.storyboard */,
@@ -97,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = kun;
 				TargetAttributes = {
 					A17CDB59246EE9CD0091ABF9 = {
@@ -144,6 +150,8 @@
 				A17CDB62246EE9CD0091ABF9 /* ViewController.swift in Sources */,
 				A17CDB5E246EE9CD0091ABF9 /* AppDelegate.swift in Sources */,
 				A17CDB72246EEC580091ABF9 /* DarwArcView.swift in Sources */,
+				BC916FD52837231B00C24327 /* BezierPathCalculateTools.swift in Sources */,
+				BC916FE72838B3DF00C24327 /* MaterialColor.swift in Sources */,
 				A17CDB74246FFB780091ABF9 /* ArcPath.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +204,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -220,7 +229,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -256,6 +265,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -274,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,7 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J437U9AE67;
 				INFOPLIST_FILE = CustomArcApiDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +320,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J437U9AE67;
 				INFOPLIST_FILE = CustomArcApiDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
